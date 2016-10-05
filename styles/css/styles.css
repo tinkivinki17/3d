@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #333;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a img {
+    border: none;
+}
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+
+    min-height: 100vh;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+body #wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+
+body:before,
+body:after,
+body #wrapper:before,
+body #wrapper:after {
+    content: '';
+    display: block;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+body,
+body #wrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+input {
+    outline: none;
+}
+
+input[type="text"], textarea {
+    border-radius: 5px;
+    border: 1px solid #7f8c8d;
+    padding: 5px;
+    display: block;
+    margin-top: 5px;
+    min-width: 285px;
+}
+
+.button:hover { background-color: #27ae60; }
+.button {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #08c;
+    display: block;
+    width: 150px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+textarea {
+    min-height: 100px;
+}
+select {
+    padding: 0 5px 0 5px;
+}
+a {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    color: #08c;
+    display: block;
+}
+
+a:hover {
+    background-color: #08c;
+    color: white;
+}
+
+p {
+    margin: 0 0 .6em;
+    line-height: 18px;
+}
+img {
+    border: none;
+}
+a img {
+    outline: none;
+}
+
+#wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 80px;
+}
+
+.flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.main li {
+    margin-bottom: 10px;
+}
+
+.main a {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 100;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item { 
+    margin-bottom: 20px;
+    -webkit-flex: 1 0 540px;
+    -ms-flex: 1 0 540px;
+    flex: 1 0 540px;
+    min-width: 540px;
+}
+
+.item .buttons { 
+    width: 120px;
+    /*display: none;*/
+}
+.item:hover .buttons { display: block; }
+
+.item .buttons a {
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.item .image {
+    -webkit-flex: 0 0 120px;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    height: 120px;
+}
+
+.item .image img {
+    display: block;
+    width: 120px;
+}
+
+.item .data {
+    -webkit-flex: 1 0 400px;
+    -ms-flex: 1 0 400px;
+    flex: 1 0 400px;
+    padding-left: 20px;
+}
+
+.item .name { font-size: 34px; font-weight: 100; }
+.item .name span { font-weight: 400; }
+
+.create-button:before {
+    content: '+';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: white;
+    color: #08c;
+}
+.create-button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    padding: 10px 20px;
+    font-size: 24px;
+    height: 44px;
+    line-height: 24px;
+    border-radius: 22px;
+    font-weight: 100;
+    text-align: right;
+}
+
+.subject-card .flex { margin-bottom: 20px; }
+.subject-card .image {
+    -webkit-flex: 0 0 200px;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    width: 200px;
+}
+
+.subject-card .image img {
+    width: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subject-card .names {
+    padding-left: 20px;
+    -webkit-flex: 0 0 300px;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    width: 300px;
+}
+
+.label {
+    margin-bottom: 20px;
+}
+
+.label textarea {
+    width: 505px;
+}
+
+.error p {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.backlink {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    padding: 10px;
+    border-radius: 21px;
+    text-align: center;
+    padding-left: 50px;
+    margin-left: -62px;
+
+    font-size: 22px;
+    height: 42px;
+    line-height: 22px;
+}
+
+.backlink:before {
+    content: '<';
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    background-color: white;
+    color: #08c;
+    padding: 5px;
+    border-radius: 100%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
