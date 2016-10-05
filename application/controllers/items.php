@@ -1,21 +1,19 @@
 <?php
 
-class Subjects extends Base_Controller {
-    public $module_name = "subjects";
-    public $title = "Испытуемые";
+class Items extends Base_Controller {
+    public $module_name = "items";
+    public $title = "Тестовые предметы";
 
     public function create()
     {
         $this->title .= "::Создание";
-        $this->form_validation->set_rules("name", "Имя", "required|trim|xss_clean");
-        $this->form_validation->set_rules("sname", "Фамилия", "required|trim|xss_clean");
+        $this->form_validation->set_rules("name", "Название", "required|trim|xss_clean");
         $this->form_validation->set_rules("comment", "Комментарий", "trim|xss_clean");
 
         if ($this->form_validation->run() === false) {
         } else {
             $data = array(
                 "name" => $this->input->post("name"),
-                "sname" => $this->input->post("sname"),
                 "comment" => $this->input->post("comment"),
             );
 
@@ -39,14 +37,12 @@ class Subjects extends Base_Controller {
         }
 
         $this->form_validation->set_rules("name", "Имя", "required|trim|xss_clean");
-        $this->form_validation->set_rules("sname", "Фамилия", "required|trim|xss_clean");
         $this->form_validation->set_rules("comment", "Комментарий", "trim|xss_clean");
 
         if ($this->form_validation->run() === false) {
         } else {
             $data = array(
                 "name" => $this->input->post("name"),
-                "sname" => $this->input->post("sname"),
                 "comment" => $this->input->post("comment"),
             );
 

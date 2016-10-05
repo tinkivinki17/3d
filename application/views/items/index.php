@@ -18,8 +18,7 @@
                 
                 <div class="data">
                     <div class="name">
-                    <span><?php echo $item->name ?></span> 
-                    <?php echo $item->sname ?>
+                    <span><?php echo $item->name ?></span>
                 </div>
                     <div class="buttons">
                         <a href="/<?php echo $this->module_name ?>/edit/<?php echo $item->id ?>">Редактировать</a>

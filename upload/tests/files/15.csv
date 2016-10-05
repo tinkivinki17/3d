@@ -1,0 +1,60 @@
+    These events may be used (or part of them) in StatsD.
+    -----------------------------------------------------------------------------
+    |   Anonymous user events from "add to cart" to "complete order"            |
+    -----------------------------------------------------------------------------
+    |   sales_quote_product_add_after                                           |
+    |   sales_quote_item_save_after                                             |
+    |                                                                           |
+    |   controller_action_postdispatch_apiv1_checkout_cybersourceSignedFields   |
+    |   cybersource_b2c_cor_add_success                                         |
+    |   controller_action_postdispatch_cybersource_sopSa_add                    |
+    |                                                                           |
+    |   sales_convert_quote_to_order                                            |
+    |   sales_convert_quote_payment_to_order_payment                            |
+    |   checkout_type_onepage_save_order                                        |
+    |                                                                           |
+    |   sales_order_payment_save_after                                          |
+    |   sales_order_save_after                                                  |
+    |                                                                           |
+    |   sales_order_payment_pay                                                 |
+    |   sales_order_invoice_pay                                                 |
+    |   sales_order_invoice_register                                            |
+    |   sales_order_invoice_save_after                                          |
+    |   sales_order_place_after                                                 |
+    |                                                                           |
+    |   sales_order_invoice_save_commit_after                                   |
+    |   sales_model_service_quote_submit_success                                |
+    |   sales_model_service_quote_submit_after                                  |
+    |                                                                           |
+    |   cybersource_b2c_cor_receipt_complete                                    |
+    |   controller_action_postdispatch_cybersource_sopSa_receipt                |
+    -----------------------------------------------------------------------------
+
+    -----------------------------------------------------------------------------
+    |   Stylist user events from "add to cart" to "complete order"              |
+    -----------------------------------------------------------------------------
+    |   controller_action_predispatch_apiv1_cart_add                            |
+    |   sales_quote_product_add_after                                           |
+    |                                                                           |
+    |   controller_action_postdispatch_checkout                                 |
+    |                                                                           |
+    |   controller_action_postdispatch_checkout_onepage_cybersourceSignedFields |
+    |                                                                           |
+    |   sales_convert_quote_to_order                                            |
+    |   sales_order_payment_pay                                                 |
+    |   sales_order_invoice_pay                                                 |
+    |   sales_order_invoice_register                                            |
+    |   sales_order_invoice_save_after                                          |
+    |   sales_order_place_after                                                 |
+    |                                                                           |
+    |   sales_order_invoice_save_commit_after                                   |
+    |   sales_model_service_quote_submit_success                                |
+    |   sales_model_service_quote_submit_after                                  |
+    |                                                                           |
+    |   cybersource_lounge_personal_receipt_complete                            |
+    |   controller_action_postdispatch_cybersource_sopSa_receipt                |
+    |   controller_action_postdispatch_cybersource                              |
+    |                                                                           |
+    |   checkout_onepage_controller_success_action                              |
+    |   controller_action_postdispatch_checkout_onepage_success                 |
+    -----------------------------------------------------------------------------

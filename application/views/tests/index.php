@@ -9,8 +9,16 @@
         <?php foreach ($items as $item) { ?>
             <div class="item flex">
                 <div class="image">
-                    <?php if (file_exists(getcwd() . "/upload/{$this->module_name}/images/{$item->id}.jpg")) { ?>
-                        <img src="/upload/<?php echo $this->module_name ?>/images/<?php echo $item->id ?>.jpg">
+                    <?php if (file_exists(getcwd() . "/upload/items/images/{$item->item_id}.jpg")) { ?>
+                        <img src="/upload/items/images/<?php echo $item->item_id ?>.jpg">
+                    <?php } else { ?>
+                        <img src="/upload/noimg.jpg">
+                    <?php } ?>
+                </div>
+
+                <div class="image">
+                    <?php if (file_exists(getcwd() . "/upload/subjects/images/{$item->subject_id}.jpg")) { ?>
+                        <img src="/upload/subjects/images/<?php echo $item->subject_id ?>.jpg">
                     <?php } else { ?>
                         <img src="/upload/noimg.jpg">
                     <?php } ?>
@@ -18,8 +26,7 @@
                 
                 <div class="data">
                     <div class="name">
-                    <span><?php echo $item->name ?></span> 
-                    <?php echo $item->sname ?>
+                    Тест №<span><?php echo $item->id ?></span>
                 </div>
                     <div class="buttons">
                         <a href="/<?php echo $this->module_name ?>/edit/<?php echo $item->id ?>">Редактировать</a>

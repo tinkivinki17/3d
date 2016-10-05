@@ -62,7 +62,12 @@ input {
     outline: none;
 }
 
-input[type="text"], textarea {
+.label select {
+    min-width: 250px;
+    height: 27px;
+}
+
+input[type="text"], textarea, select {
     border-radius: 5px;
     border: 1px solid #7f8c8d;
     padding: 5px;
@@ -124,6 +129,13 @@ a img {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+}
+
+.flex.two-col .label {
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    width: 50%;
 }
 
 .main {
@@ -253,14 +265,15 @@ a img {
 }
 
 .backlink {
+    top: -62px;
+    left: -150px;
     position: absolute;
-    left: 50%;
-    top: 20px;
-    padding: 10px;
+    width: 130px;
+    margin: 0 auto;
+    padding: 10px 20px 10px 50px;
     border-radius: 21px;
     text-align: center;
     padding-left: 50px;
-    margin-left: -62px;
 
     font-size: 22px;
     height: 42px;
@@ -281,4 +294,24 @@ a img {
     position: absolute;
     left: 5px;
     top: 5px;
+}
+
+.page_title {
+    font-size: 24px;
+    font-weight: 100;
+    border: 1px solid #08c;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px;
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page { position: relative; }
+.dwnld { 
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
 }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 05 2016 г., 14:24
+-- Время создания: Окт 05 2016 г., 18:04
 -- Версия сервера: 5.5.45
 -- Версия PHP: 5.5.28
 
@@ -32,7 +32,14 @@ CREATE TABLE IF NOT EXISTS `items` (
   `name` varchar(255) NOT NULL,
   `comment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Дамп данных таблицы `items`
+--
+
+INSERT INTO `items` (`id`, `name`, `comment`) VALUES
+(3, 'Чайник', 'Да прост');
 
 -- --------------------------------------------------------
 
@@ -47,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `subjects` (
   `sname` varchar(255) NOT NULL,
   `comment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Дамп данных таблицы `subjects`
@@ -70,7 +77,14 @@ CREATE TABLE IF NOT EXISTS `tests` (
   `item_id` int(11) NOT NULL,
   `comment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+
+--
+-- Дамп данных таблицы `tests`
+--
+
+INSERT INTO `tests` (`id`, `subject_id`, `item_id`, `comment`) VALUES
+(15, 6, 3, 'Да простда так');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

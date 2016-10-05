@@ -8,18 +8,10 @@
         </div>
         <div class="names">
             <div class="label">
-                <label for="name">Имя</label>
+                <label for="name">Название</label>
                 <input type="text" name="name" id="name">
                 <?php if ($this->form_validation->error('name')) { ?>
                     <div class="error"><?php echo $this->form_validation->error('name') ?></div>
-                <?php } ?>
-            </div>
-
-            <div class="label">
-                <label for="sname">Фамилия</label>
-                <input type="text" name="sname" id="sname">
-                <?php if ($this->form_validation->error('sname')) { ?>
-                    <div class="error"><?php echo $this->form_validation->error('sname') ?></div>
                 <?php } ?>
             </div>
         </div>
